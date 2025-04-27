@@ -1,8 +1,8 @@
 <?
 require_once("config.php");
 
-function connect($link) {
-    $link - mysqli_connect(HOST, USER, PASS, DB);
+function connect(&$link) {
+    $link = mysqli_connect(HOST, USER, PASS, DB);
     if(mysqli_connect_errno()) {
         echo "Loi ket noi: " . mysqli_connect_error();
         exit();
