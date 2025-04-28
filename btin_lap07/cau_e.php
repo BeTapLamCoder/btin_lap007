@@ -16,7 +16,7 @@ $sql = "
 $result = chayTruyVanTraVeDL($link, $sql);
 
 while ($row = mysqli_fetch_assoc($result)) {
-    echo "Tên độc giả: " . $row['ten_docgia'] . "<br>";
+    echo "Tên độc giả: " . $row['id_docgia'] . "<br>";
     echo "Email: " . $row['email'] . "<br>";
     echo "<hr>";
 }
